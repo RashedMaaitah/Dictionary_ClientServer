@@ -15,3 +15,28 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore Visual Studio project and solution files
+*.csproj
+*.sln
+*.suo
+*.user
+.vs/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore user-specific files
+*.userprefs
+*.suo
+*.sln.docstates
+
+# Ignore build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
