@@ -7,11 +7,13 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Server {
 
-    private final static int N_THREADS = 4;
-
     public static void main(String[] args) {
+        int N_THREADS = Integer.parseInt(args[0]);
+        int portNumber = Integer.parseInt(args[1]);
+
         ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(N_THREADS);
-        try (ServerSocket serverSocket = new ServerSocket(4040)) {
+        try (ServerSocket serverSocket = new ServerSocket(portNumber)) {
+            System.out.println("Server launched at port " + portNumber);
             while (true) {
                 Socket socket = serverSocket.accept();
                 System.out.println("Client socket connected: " + socket.getPort());
@@ -20,6 +22,8 @@ public class Server {
             }
         } catch (Exception ex) {
             System.out.println(ex.getClass() + " " + ex.getMessage());
+        } finally {
+            threadPoolExecutor.shutdown();
         }
     }
 }

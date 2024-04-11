@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\",
+  "WorkspaceRootPath": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\project1\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\project1\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\project1\\dictionary client\\dictionaryclient\\client\\exceptions\\resourcenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\exceptions\\resourcenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\custom\\promptwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\custom\\promptwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +27,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResourceNotFoundException.cs",
-              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\Exceptions\\ResourceNotFoundException.cs",
-              "RelativeDocumentMoniker": "Client\\Exceptions\\ResourceNotFoundException.cs",
-              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\Exceptions\\ResourceNotFoundException.cs",
-              "RelativeToolTip": "Client\\Exceptions\\ResourceNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Title": "PromptWindow.xaml.cs",
+              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\Custom\\PromptWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\Custom\\PromptWindow.xaml.cs",
+              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\Custom\\PromptWindow.xaml.cs",
+              "RelativeToolTip": "Client\\Custom\\PromptWindow.xaml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwBEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T21:33:09.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T17:43:02.628Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml",
+              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Client\\MainWindow.xaml",
-              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml",
+              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml",
               "RelativeToolTip": "Client\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-07T15:47:34.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T16:43:35.423Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
+              "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
-              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Project1\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
+              "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
               "RelativeToolTip": "Client\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAQwDkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T09:38:08.157Z",
+              "WhenOpened": "2024-04-10T18:15:44.388Z",
               "EditorCaption": ""
             }
           ]

@@ -12,8 +12,8 @@
         ShowTitleBar="False"
         MouseLeftButtonDown="MetroWindow_MouseLeftButtonDown">
 
-    <Grid Background="#f4f7f5">
-       
+    <Grid x:Name="Main_Grid" Background="#f4f7f5">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="50*"/>
@@ -21,18 +21,23 @@
         </Grid.RowDefinitions>
 
         <Grid>
-            <Menu FontSize="16" Background="#08090a">
+            <Menu x:Name="MenuBar" FontSize="16" Background="#08090a">
                 <MenuItem Header="File" Margin="5 0" Foreground="White" Background="Transparent">
                     <MenuItem Header="Exit" x:Name="Exit_MenuItem" Click="Exit_MenuItem_Click" Background="#08090a"/>
                 </MenuItem>
                 <MenuItem Header="Edit" Margin="5 0" Foreground="White"  Background="Transparent"/>
-                <MenuItem Header="View" Margin="5 0" Foreground="White"  Background="Transparent"/>
+                <MenuItem Header="View" Margin="5 0" Foreground="White"  Background="Transparent">
+                    <MenuItem Header="Theme" Background="#08090a">
+                        <MenuItem x:Name="DefaultTheme_MenuItem" Click="Theme_MenuItem_Clicked" Header="Default" Background="#08090a"/>
+                        <MenuItem x:Name="SkyBlueTheme_MenuItem" Click="Theme_MenuItem_Clicked" Header="Sky" Background="#08090a"/>
+                    </MenuItem>
+                </MenuItem>
                 <MenuItem Header="Help" Margin="5 0" Foreground="White"  Background="Transparent"/>
             </Menu>
         </Grid>
 
         <!--Row 0-->
-        <Label Foreground="#575a5e" Content="Dictionary App" Margin="0,25,0,0" FontSize="70" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Height="115" Width="512" Grid.RowSpan="2">
+        <Label x:Name="App_Label" Foreground="#575a5e" Content="Dictionary App" Margin="0,25,0,0" FontSize="70" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Height="115" Width="512" Grid.RowSpan="2">
             <Label.Effect>
                 <DropShadowEffect
                     ShadowDepth="6"
@@ -44,7 +49,7 @@
         </Label>
 
         <!--Row 1-->
-        <Label Grid.Row="1" Foreground="#575a5e" FontWeight="Bold" VerticalAlignment="Center" Margin="50,50,0,0" FontSize="24" Content="Word:">
+        <Label x:Name="Word_Label" Grid.Row="1" Foreground="#575a5e" FontWeight="Bold" VerticalAlignment="Center" Margin="50,50,0,0" FontSize="24" Content="Word:">
             <Label.Effect>
                 <DropShadowEffect 
                     ShadowDepth="3"
@@ -55,16 +60,17 @@
             </Label.Effect>
         </Label>
         <Label x:Name="Required_Label" Grid.Row="1" Visibility="Hidden" Foreground="Red" FontWeight="Bold" VerticalAlignment="Center" Margin="410,70,0,0" FontSize="12">Required*</Label>
+
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,150,0,0" >
             <TextBox x:Name="Word_TextBox" Padding="5" FontSize="24" Background="#a7a2a9" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center"  Width="441" Height="58" Margin="50,0,10,0" />
-            <Border CornerRadius="3" BorderThickness="2" BorderBrush="#575a5e" Width="122" Height="45">
-                <Button x:Name="Submit"  BorderThickness="0" Foreground="Azure" Background="#F7F7F6" Click="Submit_Click" VerticalAlignment="Center" Width="120" Height="50" FontSize="22">
-                    <TextBlock Text="Submit" Foreground="#575a5e"/>
+            <Border x:Name="SubmitBtn_Border" CornerRadius="3" BorderThickness="2" BorderBrush="#575a5e" Width="122" Height="45">
+                <Button x:Name="Submit" BorderThickness="0" Foreground="#575a5e" Background="#F7F7F6" Click="Submit_Click" VerticalAlignment="Center" Width="120" Height="50" FontSize="22">
+                    <TextBlock Text="Submit" />
                 </Button>
             </Border>
-            <Border CornerRadius="3" BorderThickness="2" BorderBrush="#575a5e" Width="122" Height="45" Margin="5,0,0,0">
-                <Button x:Name="Clear"  BorderThickness="0" Foreground="Azure" Background="#F7F7F6" Click="Clear_Click" VerticalAlignment="Center" Width="120" Height="50" FontSize="22">
-                    <TextBlock Text="Clear" Foreground="#575a5e"/>
+            <Border x:Name="ClearBtn_Border" CornerRadius="3" BorderThickness="2" BorderBrush="#575a5e" Width="122" Height="45" Margin="5,0,0,0">
+                <Button x:Name="Clear"  BorderThickness="0" Foreground="#575a5e" Background="#F7F7F6" Click="Clear_Click" VerticalAlignment="Center" Width="120" Height="50" FontSize="22">
+                    <TextBlock Text="Clear" />
                 </Button>
             </Border>
         </StackPanel>
@@ -72,7 +78,7 @@
         <!--Row 2-->
         <StackPanel Grid.Row="2" Margin="50,0,0,0">
 
-            <Label Grid.Row="2" Foreground="#575a5e" FontWeight="Bold" VerticalAlignment="Top"  FontSize="24" Content="Definition:">
+            <Label x:Name="Def_Label" Grid.Row="2" Foreground="#575a5e" FontWeight="Bold" VerticalAlignment="Top"  FontSize="24" Content="Definition:">
                 <Label.Effect>
                     <DropShadowEffect 
                                     ShadowDepth="3"

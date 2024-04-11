@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-R:\Third Year- second semester\Distributed\Assignments\Project1\Dictionary Client\DictionaryClient\Client\obj\Debug\net8.0-windows\
+R:\Third Year- second semester\Distributed\Assignments\Dictionary_ClientServer\Dictionary Client\DictionaryClient\Client\obj\Debug\net8.0-windows\
 Client
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-R:\Third Year- second semester\Distributed\Assignments\Project1\Dictionary Client\DictionaryClient\Client\App.xaml
-11407045341
+R:\Third Year- second semester\Distributed\Assignments\Dictionary_ClientServer\Dictionary Client\DictionaryClient\Client\App.xaml
+2101420404
 
-7-1219140475
+8607789952
 201-1166691639
-MainWindow.xaml;
+Custom\PromptWindow.xaml;MainWindow.xaml;
 
 True
 

@@ -7,16 +7,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 class DictionaryAPI {
 
-    private final static List<String> searchedWords = Collections.synchronizedList(new ArrayList<>());
-
     static ResponseEntity read(String word) {
-        searchedWords.add(word);
 
         String response = "";
         try {
@@ -26,8 +20,6 @@ class DictionaryAPI {
 
             int responseCode = connection.getResponseCode();
 
-            // if (responseCode == 404)
-            // return new ResponseEntity("NotFound", responseCode);
             if (responseCode != 200)
                 return new ResponseEntity("", responseCode);
 
@@ -73,10 +65,6 @@ class DictionaryAPI {
             System.out.println(ex.getClass() + " " + ex.getMessage());
             return new ResponseEntity("", 500);
         }
-    }
-
-    static List<String> getSearchedWords() {
-        return searchedWords;
     }
 
 }
