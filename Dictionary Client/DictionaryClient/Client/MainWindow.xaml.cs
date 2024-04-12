@@ -7,9 +7,11 @@ using System.IO;
 using System.Net.Sockets;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
+using System.Windows.Navigation;
 
 
 namespace Client;
@@ -195,7 +197,7 @@ public partial class MainWindow : MetroWindow
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void Exit_MenuItem_Click(object sender, RoutedEventArgs e) => Close();
+    private void Exit_Click(object sender, RoutedEventArgs e) => Close();
 
     /// <summary>
     /// Drag and moves the window on Mouse left button down
@@ -272,6 +274,11 @@ public partial class MainWindow : MetroWindow
 
     }
 
+    /// <summary>
+    /// Change theme based on the chosen theme option
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void Theme_MenuItem_Clicked(object sender, RoutedEventArgs e)
     {
         if (sender is not MenuItem menu)
@@ -283,14 +290,39 @@ public partial class MainWindow : MetroWindow
         {
             case "Default":
                 ChangeTheme();
+                DefaultTheme_MenuItem.IsChecked = true;
+                SkyBlueTheme_MenuItem.IsChecked = false;
                 break;
-            case "Sky":
+            case "Sky Blue":
                 ChangeTheme(1);
+                DefaultTheme_MenuItem.IsChecked = false;
+                SkyBlueTheme_MenuItem.IsChecked = true;
                 break;
             default:
                 break;
         }
     }
 
+    /// <summary>
+    /// Minimize the Window
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void Minimize_Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) => WindowState = WindowState.Minimized;
 
+    private void HelpMain_MenuItem_Click(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            // Specify the mailto URI
+            string mailtoUri = "mailto:rashedkhaldoonn8@gmail.com?subject=ProblemReport";
+
+            // Launch the default mail client with the specified mailto URI
+            Process.Start(mailtoUri);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error opening mail client: " + ex.Message);
+        }
+    }
 }

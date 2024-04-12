@@ -10,7 +10,10 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ShowTitleBar="False"
-        MouseLeftButtonDown="MetroWindow_MouseLeftButtonDown">
+        MouseLeftButtonDown="MetroWindow_MouseLeftButtonDown"
+        ShowCloseButton="False"
+        ShowMinButton="False"
+        ShowMaxRestoreButton="False">
 
     <Grid x:Name="Main_Grid" Background="#f4f7f5">
 
@@ -21,19 +24,30 @@
         </Grid.RowDefinitions>
 
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
             <Menu x:Name="MenuBar" FontSize="16" Background="#08090a">
                 <MenuItem Header="File" Margin="5 0" Foreground="White" Background="Transparent">
-                    <MenuItem Header="Exit" x:Name="Exit_MenuItem" Click="Exit_MenuItem_Click" Background="#08090a"/>
+                    <MenuItem Header="Exit" x:Name="Exit_MenuItem" Click="Exit_Click" Background="#08090a"/>
                 </MenuItem>
                 <MenuItem Header="Edit" Margin="5 0" Foreground="White"  Background="Transparent"/>
                 <MenuItem Header="View" Margin="5 0" Foreground="White"  Background="Transparent">
                     <MenuItem Header="Theme" Background="#08090a">
-                        <MenuItem x:Name="DefaultTheme_MenuItem" Click="Theme_MenuItem_Clicked" Header="Default" Background="#08090a"/>
-                        <MenuItem x:Name="SkyBlueTheme_MenuItem" Click="Theme_MenuItem_Clicked" Header="Sky" Background="#08090a"/>
+                        <MenuItem x:Name="DefaultTheme_MenuItem" IsCheckable="True" IsChecked="True" Click="Theme_MenuItem_Clicked" Header="Default" Background="#08090a"/>
+                        <MenuItem x:Name="SkyBlueTheme_MenuItem" IsCheckable="True" Click="Theme_MenuItem_Clicked" Header="Sky Blue" Background="#08090a"/>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="Help" Margin="5 0" Foreground="White"  Background="Transparent"/>
+                <MenuItem Header="Help" Foreground="White" Background="Transparent" >
+                    <MenuItem x:Name="HelpMain_MenuItem" Header="About" Background="#08090a" Click="HelpMain_MenuItem_Click"/>
+
+                </MenuItem>
             </Menu>
+            <StackPanel Grid.Column="1" FlowDirection="RightToLeft" Orientation="Horizontal" Background="Black">
+                <Image x:Name="Close_Image" Source="/Resources/Icons/close4.png" Height="25" MouseLeftButtonDown="Exit_Click" Margin="0 0 5 0"/>
+                <Image  x:Name="Minimize_Image" Source="/Resources/Icons/min2.png" Height="20" Width="25" MouseLeftButtonDown="Minimize_Image_MouseLeftButtonDown"/>
+            </StackPanel>
         </Grid>
 
         <!--Row 0-->

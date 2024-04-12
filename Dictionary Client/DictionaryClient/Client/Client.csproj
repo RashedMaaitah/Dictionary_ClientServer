@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <None Remove="Resources\Icons\ask.png" />
+    <None Remove="Resources\Icons\close1.png" />
+    <None Remove="Resources\Icons\close2.png" />
+    <None Remove="Resources\Icons\close4.png" />
+    <None Remove="Resources\Icons\min1.png" />
+    <None Remove="Resources\Icons\min2.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +23,11 @@
 
   <ItemGroup>
     <Resource Include="Resources\Icons\ask.png" />
+    <Resource Include="Resources\Icons\close1.png" />
+    <Resource Include="Resources\Icons\close2.png" />
+    <Resource Include="Resources\Icons\close4.png" />
+    <Resource Include="Resources\Icons\min1.png" />
+    <Resource Include="Resources\Icons\min2.png" />
   </ItemGroup>
 
 </Project>
