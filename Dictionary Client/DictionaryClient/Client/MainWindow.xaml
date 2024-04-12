@@ -28,20 +28,22 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Menu x:Name="MenuBar" FontSize="16" Background="#08090a">
+            <Menu x:Name="MenuBar" FontSize="16" Background="#08090a" Height="30" VerticalAlignment="Top">
                 <MenuItem Header="File" Margin="5 0" Foreground="White" Background="Transparent">
                     <MenuItem Header="Exit" x:Name="Exit_MenuItem" Click="Exit_Click" Background="#08090a"/>
                 </MenuItem>
-                <MenuItem Header="Edit" Margin="5 0" Foreground="White"  Background="Transparent"/>
+
+                <MenuItem Header="Edit" Margin="5 0" Foreground="White"  Background="Transparent">
+                    <MenuItem Header="Clear" Click="Clear_Click" Background="#08090a"/>
+                    <MenuItem Header="Copy Definition" Click="CopyMenuItem_Click" Background="#08090a"/>
+                </MenuItem>
+                
+
                 <MenuItem Header="View" Margin="5 0" Foreground="White"  Background="Transparent">
                     <MenuItem Header="Theme" Background="#08090a">
                         <MenuItem x:Name="DefaultTheme_MenuItem" IsCheckable="True" IsChecked="True" Click="Theme_MenuItem_Clicked" Header="Default" Background="#08090a"/>
                         <MenuItem x:Name="SkyBlueTheme_MenuItem" IsCheckable="True" Click="Theme_MenuItem_Clicked" Header="Sky Blue" Background="#08090a"/>
                     </MenuItem>
-                </MenuItem>
-                <MenuItem Header="Help" Foreground="White" Background="Transparent" >
-                    <MenuItem x:Name="HelpMain_MenuItem" Header="About" Background="#08090a" Click="HelpMain_MenuItem_Click"/>
-
                 </MenuItem>
             </Menu>
             <StackPanel Grid.Column="1" FlowDirection="RightToLeft" Orientation="Horizontal" Background="Black">

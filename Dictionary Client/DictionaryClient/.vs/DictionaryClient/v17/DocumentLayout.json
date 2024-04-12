@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|r:\\third year- second semester\\distributed\\assignments\\dictionary_clientserver\\dictionary client\\dictionaryclient\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AAD2D0FD-BA2F-4D25-876C-31FAB2D9CABF}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Client\\MainWindow.xaml",
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
               "ToolTip": "R:\\Third Year- second semester\\Distributed\\Assignments\\Dictionary_ClientServer\\Dictionary Client\\DictionaryClient\\Client\\MainWindow.xaml.cs",
               "RelativeToolTip": "Client\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAC8BAAAAAAAAAAAIwD4BAAAAAAAA",
+              "ViewState": "AQIAABcBAAAAAAAAAAAwwEIBAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T18:15:44.388Z",
               "EditorCaption": ""

@@ -7,11 +7,9 @@ using System.IO;
 using System.Net.Sockets;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
-using System.Windows.Navigation;
 
 
 namespace Client;
@@ -51,7 +49,10 @@ public partial class MainWindow : MetroWindow
     {
         InitializeComponent();
 
-        PromptPortNumber("Enter the port number to connect");
+        if(!PromptPortNumber("Enter the port number to connect"))
+        {
+            return;
+        }
 
         try
         {
@@ -71,7 +72,7 @@ public partial class MainWindow : MetroWindow
     /// Choose the port number to connect to
     /// </summary>
     /// <param name="msg"></param>
-    private void PromptPortNumber(string msg)
+    private bool PromptPortNumber(string msg)
     {
 
         PromptWindow prompt = new(msg, "4040");
@@ -81,7 +82,7 @@ public partial class MainWindow : MetroWindow
             if (prompt.IsClosed)
             {
                 Close();
-                return;
+                return false;
             }
             var successfullParse = int.TryParse(prompt.Answer, out PORT_NUMBER);
             if (!successfullParse)
@@ -99,6 +100,7 @@ public partial class MainWindow : MetroWindow
                 break;
             }
         }
+        return true;
     }
 
     /// <summary>
@@ -301,6 +303,7 @@ public partial class MainWindow : MetroWindow
             default:
                 break;
         }
+
     }
 
     /// <summary>
@@ -310,19 +313,13 @@ public partial class MainWindow : MetroWindow
     /// <param name="e"></param>
     private void Minimize_Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) => WindowState = WindowState.Minimized;
 
-    private void HelpMain_MenuItem_Click(object sender, RoutedEventArgs e)
+    /// <summary>
+    /// Copy the <see cref="Result_TextBox"/> content to ClipBoard
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void CopyMenuItem_Click(object sender, RoutedEventArgs e)
     {
-        try
-        {
-            // Specify the mailto URI
-            string mailtoUri = "mailto:rashedkhaldoonn8@gmail.com?subject=ProblemReport";
-
-            // Launch the default mail client with the specified mailto URI
-            Process.Start(mailtoUri);
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Error opening mail client: " + ex.Message);
-        }
+        Clipboard.SetText(Result_TextBox.Text);
     }
 }
